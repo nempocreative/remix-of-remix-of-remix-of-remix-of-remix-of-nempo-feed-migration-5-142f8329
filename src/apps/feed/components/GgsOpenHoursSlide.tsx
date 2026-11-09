@@ -1,10 +1,10 @@
 import type { RefObject } from 'react';
-import salonPhoto from '@/assets/ggs-open-hours-hair-sweep.jpg';
-import salonVideo from '@/assets/ggs-open-hours-hair-sweep.mp4.asset.json';
+import salonPoster from '@/assets/ggs-open-hours-nail-coaster-poster.jpg.asset.json';
+import salonVideo from '@/assets/ggs-open-hours-nail-coaster.mp4.asset.json';
 import ggsWatermark from '@/assets/ggs-header-footer-v2.png.asset.json';
 import './GgsOpenHoursSlide.css';
 
-/** GGS Feed slide 23: looping hairstyle footage with the opening hours and v2 branding. */
+/** GGS Feed slide 23: looping nail-art hand footage with the opening hours and v2 branding. */
 export function GgsOpenHoursSlide({ exportRef }: { exportRef?: RefObject<HTMLElement | null> }) {
   return (
     <div
@@ -15,8 +15,8 @@ export function GgsOpenHoursSlide({ exportRef }: { exportRef?: RefObject<HTMLEle
       <video
         className="ggh-photo"
         src={salonVideo.url}
-        poster={salonPhoto}
-        aria-label="Seorang perempuan dari belakang dengan rambut panjang yang mengibas menyapu latar"
+        poster={salonPoster.url}
+        aria-label="Tangan dengan nail art cokelat-emas memegang coaster GGS Studio Beauty"
         autoPlay
         muted
         loop
