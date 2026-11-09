@@ -34,6 +34,14 @@ export type PricePage = {
   sections: PriceSection[];
 };
 
+/** One body/title size shared by every page so the whole list reads evenly. */
+export const UNIFORM_TEXT_SIZE = 16.5;
+export const UNIFORM_TITLE_SIZE = 18.4;
+/** Shared right edge of the price column (points). */
+export const UNIFORM_RIGHT = 465;
+/** Shared top of the first section (points), just under the tagline and logo. */
+export const UNIFORM_TOP = 140;
+
 export const GGS_PRICE_CONTACT = {
   instagram: '@ggsbeauty.hair.co',
   whatsapp: '0823-4277-7723',
@@ -44,11 +52,11 @@ export const GGS_PRICE_PAGES: PricePage[] = [
     id: 'nail-art',
     label: 'NAIL ART',
     labelSize: 47.4,
-    textSize: 18.6,
-    titleSize: 20.6,
+    textSize: UNIFORM_TEXT_SIZE,
+    titleSize: UNIFORM_TITLE_SIZE,
     rowHeight: 40.5,
-    right: 401,
-    top: 187,
+    right: UNIFORM_RIGHT,
+    top: UNIFORM_TOP,
     sections: [
       {
         title: 'NAIL ART & DESIGN',
@@ -74,11 +82,11 @@ export const GGS_PRICE_PAGES: PricePage[] = [
     id: 'haircuts',
     label: 'HAIR & STYLE',
     labelSize: 37.4,
-    textSize: 17.5,
-    titleSize: 19.5,
+    textSize: UNIFORM_TEXT_SIZE,
+    titleSize: UNIFORM_TITLE_SIZE,
     rowHeight: 35,
-    right: 382,
-    top: 187,
+    right: UNIFORM_RIGHT,
+    top: UNIFORM_TOP,
     sections: [
       {
         title: 'HAIRCUTS & STYLING',
@@ -106,11 +114,11 @@ export const GGS_PRICE_PAGES: PricePage[] = [
     id: 'colouring-creambath',
     label: 'HAIR & STYLE',
     labelSize: 37.4,
-    textSize: 15.6,
-    titleSize: 17.4,
+    textSize: UNIFORM_TEXT_SIZE,
+    titleSize: UNIFORM_TITLE_SIZE,
     rowHeight: 34,
-    right: 347,
-    top: 187,
+    right: UNIFORM_RIGHT,
+    top: UNIFORM_TOP,
     sections: [
       {
         title: 'COLOURING FULL WARNA',
@@ -145,11 +153,11 @@ export const GGS_PRICE_PAGES: PricePage[] = [
     id: 'hair-treatment',
     label: 'HAIR & STYLE',
     labelSize: 37.4,
-    textSize: 14.3,
-    titleSize: 15.8,
+    textSize: UNIFORM_TEXT_SIZE,
+    titleSize: UNIFORM_TITLE_SIZE,
     rowHeight: 30.6,
-    right: 321,
-    top: 179,
+    right: UNIFORM_RIGHT,
+    top: UNIFORM_TOP,
     sections: [
       {
         title: 'HAIR TREATMENT',
@@ -191,11 +199,11 @@ export const GGS_PRICE_PAGES: PricePage[] = [
     id: 'massage-body',
     label: 'MASSAGE',
     labelSize: 47.4,
-    textSize: 15.8,
-    titleSize: 17.5,
+    textSize: UNIFORM_TEXT_SIZE,
+    titleSize: UNIFORM_TITLE_SIZE,
     rowHeight: 32,
-    right: 349,
-    top: 156,
+    right: UNIFORM_RIGHT,
+    top: UNIFORM_TOP,
     sections: [
       {
         title: 'MASSAGE SERVICE',
@@ -233,11 +241,11 @@ export const GGS_PRICE_PAGES: PricePage[] = [
     id: 'bundling',
     label: 'MASSAGE',
     labelSize: 47.4,
-    textSize: 20,
-    titleSize: 22.2,
-    rowHeight: 71,
-    right: 428,
-    top: 179,
+    textSize: UNIFORM_TEXT_SIZE,
+    titleSize: UNIFORM_TITLE_SIZE,
+    rowHeight: 60,
+    right: UNIFORM_RIGHT,
+    top: UNIFORM_TOP,
     sections: [
       {
         title: 'BUNDLING PACKAGE',

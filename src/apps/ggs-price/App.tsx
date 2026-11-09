@@ -14,37 +14,8 @@ function A4Page({ page }: { page: PricePage }) {
     '--title': PT(page.titleSize),
     '--label': PT(page.labelSize),
   } as CSSProperties;
-  const ref = useRef<HTMLDivElement>(null);
-
-  // Shrink a row's text until name + price fit on one line.
-  useLayoutEffect(() => {
-    const fit = () => {
-      const rows = Array.from(ref.current?.querySelectorAll<HTMLElement>('.ggpr-row') ?? []);
-      // Find the smallest scale any row needs, then apply it to every row
-      // so all text on the page stays the same size.
-      let f = 1;
-      rows.forEach((row) => {
-        row.style.fontSize = '';
-        // row.scrollWidth grows past clientWidth when name + leader + price overflow.
-        while (row.scrollWidth > row.clientWidth + 1 && f > 0.6) {
-          f -= 0.03;
-          row.style.fontSize = `calc(var(--text) * ${f.toFixed(2)})`;
-        }
-      });
-      const size = `calc(var(--text) * ${f.toFixed(2)})`;
-      rows.forEach((row) => {
-        row.style.fontSize = size;
-      });
-    };
-    fit();
-    document.fonts?.ready.then(fit);
-    const ro = new ResizeObserver(fit);
-    if (ref.current) ro.observe(ref.current);
-    return () => ro.disconnect();
-  }, []);
-
   return (
-    <div className="ggpr-page" ref={ref}>
+    <div className="ggpr-page">
       <div className="ggpr-art" style={vars}>
         <img className="ggpr-bg" src={background.url} alt="" draggable={false} />
 
@@ -98,6 +69,30 @@ function A4Page({ page }: { page: PricePage }) {
 }
 
 export default function App() {
+  const mainRef = useRef<HTMLElement>(null);
+
+  // Shrink text until every row on every page fits on one line, using one
+  // shared scale so all pages keep the exact same text size.
+  useLayoutEffect(() => {
+    const fit = () => {
+      const root = mainRef.current;
+      if (!root) return;
+      const rows = Array.from(root.querySelectorAll<HTMLElement>('.ggpr-row'));
+      const apply = (f: number) => root.style.setProperty('--fit', f.toFixed(2));
+      let f = 1;
+      apply(f);
+      while (f > 0.6 && rows.some((row) => row.scrollWidth > row.clientWidth + 1)) {
+        f -= 0.02;
+        apply(f);
+      }
+    };
+    fit();
+    document.fonts?.ready.then(fit);
+    const ro = new ResizeObserver(fit);
+    if (mainRef.current) ro.observe(mainRef.current);
+    return () => ro.disconnect();
+  }, []);
+
   return (
     <div className="ggpr-root">
       <header className="ggpr-toolbar">
@@ -118,7 +113,7 @@ export default function App() {
         </div>
       </header>
 
-      <main className="ggpr-pages">
+      <main className="ggpr-pages" ref={mainRef}>
         {GGS_PRICE_PAGES.map((page, i) => (
           <div key={page.id} className="ggpr-page-wrap">
             <p className="ggpr-page-no">Halaman {i + 1}</p>

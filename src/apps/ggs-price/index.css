@@ -166,7 +166,7 @@
   min-height: var(--row);
   padding: calc(var(--row) * .1) 0 calc(var(--row) * .06) calc(2 * var(--pt));
   font-weight: 400;
-  font-size: var(--text);
+  font-size: calc(var(--text) * var(--fit, 1));
   line-height: 1.12;
 }
 .ggpr-leader {
@@ -177,7 +177,7 @@
 }
 .ggpr-row .price {
   flex: none;
-  width: calc(110 * var(--pt));
+  min-width: calc(110 * var(--pt));
   text-align: right;
   white-space: nowrap;
   font-variant-numeric: tabular-nums;
