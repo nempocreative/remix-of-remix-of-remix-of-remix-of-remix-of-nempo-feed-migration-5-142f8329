@@ -1,0 +1,59 @@
+/* Nempo Feed slides 38–43: editorial division posters (one division per slide). */
+.kmd-root { background: var(--kmd-bg); color: var(--kmd-text); }
+.kmd-root .kmd-backdrop { position: absolute; inset: 0; z-index: 0; width: 100%; height: 100%; object-fit: cover; pointer-events: none; }
+.kmd-glow { position: absolute; inset: 0; z-index: 0; background: var(--kmd-scrim), var(--kmd-glow); pointer-events: none; }
+
+/* Chalk doodles: kept to the empty corners so they never sit under text */
+.kmd-doodles { position: absolute; inset: 0; z-index: 1; pointer-events: none; color: var(--kmd-chalk); }
+.kmd-doodles svg { position: absolute; display: block; overflow: visible; }
+.kmd-doodles path, .kmd-doodles circle { stroke: currentColor; stroke-width: 1.6; stroke-linecap: round; stroke-linejoin: round; vector-effect: non-scaling-stroke; }
+.kmd-doodle-trail { right: 9cqw; bottom: 1.5cqw; width: 9cqw; height: 15cqw; }
+.kmd-doodle-trail path { stroke-dasharray: 2px 5px; }
+.kmd-root .kmd-doodle-icon { position: absolute; right: 4.5cqw; bottom: 14.5cqw; width: 12cqw; height: 12cqw; transform: rotate(-12deg); }
+.kmd-doodle-spark { right: 15cqw; bottom: 25.5cqw; width: 3.4cqw; height: 3.4cqw; transform: rotate(160deg); }
+.kmd-doodle-loop { left: 3cqw; bottom: 3cqw; width: 19cqw; height: 8.6cqw; }
+.kmd-doodle-loop circle { fill: var(--kmd-accent); stroke: none; }
+
+/* Hero: text left, painted illustration right */
+.kmd-hero { position: absolute; z-index: 2; top: 20cqw; left: 7.5cqw; right: 7.5cqw; height: 47cqw; display: flex; gap: 4cqw; }
+.kmd-hero-text { flex: 1; min-width: 0; display: flex; flex-direction: column; justify-content: center; }
+.kmd-label {
+  display: flex; align-items: center; gap: 1.6cqw; margin-bottom: 2.6cqw;
+  font-family: 'Space Mono', monospace; font-size: 1.85cqw; text-transform: uppercase; letter-spacing: .14em !important; color: var(--kmd-muted);
+}
+.kmd-label b { font-weight: 700; color: var(--kmd-accent); }
+.kmd-label i { display: block; width: 7cqw; height: 1px; background: var(--kmd-muted); }
+.kmd-name { font-size: 7.4cqw; font-weight: 700; line-height: .98; letter-spacing: -.025em !important; }
+.kmd-root .kmd-tagline { margin-top: 2.6cqw; font-size: 2.45cqw; font-weight: 400; line-height: 1.45; color: var(--kmd-text); }
+.kmd-root .kmd-fit { margin-top: 2.2cqw; padding-left: 2cqw; border-left: 2px solid var(--kmd-accent); font-family: 'Playfair Display', Georgia, serif; font-style: italic; font-weight: 500; font-size: 2.3cqw; line-height: 1.45; color: var(--kmd-muted); }
+
+.kmd-photo { position: relative; flex: none; width: 37cqw; height: 100%; overflow: hidden; border-radius: 1.6cqw; box-shadow: var(--kmd-photo-shadow); }
+.kmd-photo img { display: block; width: 100%; height: 100%; object-fit: cover; object-position: 50% 45%; }
+.kmd-photo::after { content: ''; position: absolute; inset: 0; background: var(--kmd-photo-shade); }
+
+/* Shared section rules */
+.kmd-section { position: absolute; z-index: 2; left: 7.5cqw; right: 7.5cqw; border-top: 1px solid var(--kmd-faint); padding-top: 2.6cqw; }
+.kmd-root .kmd-head {
+  margin-bottom: 1.8cqw; font-family: 'Space Mono', monospace; font-size: 1.75cqw; font-weight: 700;
+  text-transform: uppercase; letter-spacing: .16em !important; color: var(--kmd-accent);
+}
+
+.kmd-tasks-wrap { top: 71cqw; }
+.kmd-root .kmd-tasks { display: grid; grid-template-columns: 1fr 1fr; column-gap: 4.5cqw; row-gap: 2.4cqw; list-style: none; }
+.kmd-tasks li { display: flex; gap: 1.8cqw; font-size: 2.35cqw; font-weight: 500; line-height: 1.4; }
+.kmd-num { flex: none; font-family: 'Space Mono', monospace; font-size: 1.7cqw; line-height: 1.4; padding-top: .35cqw; color: var(--kmd-muted); }
+
+.kmd-meta { top: 97cqw; display: grid; grid-template-columns: 1fr 1fr; column-gap: 4.5cqw; }
+.kmd-root .kmd-list { display: flex; flex-direction: column; gap: .9cqw; margin: 0; padding: 0; list-style: none; }
+.kmd-list li { display: flex; align-items: center; gap: 1.6cqw; font-size: 2.2cqw; font-weight: 500; line-height: 1.35; white-space: nowrap; }
+.kmd-list li::before { content: ''; flex: none; width: 2cqw; height: 1px; background: var(--kmd-accent); }
+
+.kmd-root .kmd-cta {
+  position: absolute; z-index: 1; left: 2cqw; right: 2cqw; bottom: 2cqw; display: flex; align-items: center; justify-content: center; gap: 1.1cqw;
+  padding: 1.4cqw 1.6cqw; border-radius: 99px; background: var(--kmd-accent); color: var(--kmd-ink); font-size: 1.95cqw; line-height: 1; white-space: nowrap;
+}
+.kmd-cta span { font-weight: 500; }
+.kmd-cta strong { font-weight: 700; }
+.kmd-cta svg { width: 2.4cqw; height: 2.4cqw; }
+
+.kmd-root .kmt-footer { bottom: 5.8cqw; }

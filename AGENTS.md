@@ -28,3 +28,12 @@ use the editor.
   own key and store it in Secrets.
 - **Secrets.** Lovable manages them. Do not put secret values in the repo.
 <!-- LOVABLE:END -->
+
+- NEMPO Feed is migrated from github.com/nempocreative/nempo-60 as a sub-app in `src/apps/feed`, mounted at `/nempo-feed` (`/` redirects there); why: the owner is migrating that repo section by section.
+- Tion Feed (Nasution Boy) is migrated from github.com/nempocreative/organizer `artifacts/tion-feed` as sub-app `src/apps/tion`, mounted at `/tion-feed` (only the one feed poster; other source slides, the Story and the bumper were removed at the owner's request, and `/tion-feed/*` redirects to it), media as project asset pointers in `src/assets/tion/`; why: keeps the source app's own routing and look intact.
+- tsconfig strict extras (noUncheckedIndexedAccess, exactOptionalPropertyTypes, etc.) are off to match the source repo; why: migrated code was written without them.
+- GGS prebuilt download files (MP4/PNG asset pointers) are captured from the live preview with the slide root pinned at 0,0 and 1440 CSS px wide, CSS animations paused and stepped per frame; videos at dpr 1. A 2× still is allowed only by capturing at dpr 2 with the header/footer overlay hidden and compositing the overlay afterwards with a Lanczos 2× upscale; why: the overlays are 1440×1920 bitmaps and the browser's rescale blurs their text. Recapture when the slide changes.
+- NEMPO slide 37 plays its rendered activity MP4 through an asset pointer with pause/replay/audio controls and reduced-motion support; the same file is downloaded via a prefetched blob link and its first frame supplies the PNG cover, keeping preview and downloads identical.
+- Every `.asset.json` pointer must belong to this project (re-upload with `lovable-assets create` when copying from another project); why: hosted media URLs are project-scoped and 404 elsewhere.
+
+- GGS annual calendar keeps its 5:7 export artboard, UTC date calculation, and scoped ggcal styles with global palette tokens; dated national holidays and non-holiday commemorations live in tested ggs-calendar-dates with official source citations, separately from optional collective leave; why: print and preview must share an accurate, legible twelve-month layout.

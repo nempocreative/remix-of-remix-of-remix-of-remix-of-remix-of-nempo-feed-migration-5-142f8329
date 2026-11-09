@@ -10,33 +10,115 @@
 
 import { Route as rootRouteImport } from './routes/__root'
 import { Route as IndexRouteImport } from './routes/index'
+import { Route as GgsPriceListIndexRouteImport } from './routes/ggs-price-list.index'
+import { Route as GgsPriceListSplatRouteImport } from './routes/ggs-price-list.$'
+import { Route as NempoFeedIndexRouteImport } from './routes/nempo-feed.index'
+import { Route as NempoFeedSplatRouteImport } from './routes/nempo-feed.$'
+import { Route as TionFeedIndexRouteImport } from './routes/tion-feed.index'
+import { Route as TionFeedSplatRouteImport } from './routes/tion-feed.$'
 
 const IndexRoute = IndexRouteImport.update({
   id: '/',
   path: '/',
   getParentRoute: () => rootRouteImport,
 } as any)
+const GgsPriceListIndexRoute = GgsPriceListIndexRouteImport.update({
+  id: '/ggs-price-list/',
+  path: '/ggs-price-list/',
+  getParentRoute: () => rootRouteImport,
+} as any)
+const GgsPriceListSplatRoute = GgsPriceListSplatRouteImport.update({
+  id: '/ggs-price-list/$',
+  path: '/ggs-price-list/$',
+  getParentRoute: () => rootRouteImport,
+} as any)
+const NempoFeedIndexRoute = NempoFeedIndexRouteImport.update({
+  id: '/nempo-feed/',
+  path: '/nempo-feed/',
+  getParentRoute: () => rootRouteImport,
+} as any)
+const NempoFeedSplatRoute = NempoFeedSplatRouteImport.update({
+  id: '/nempo-feed/$',
+  path: '/nempo-feed/$',
+  getParentRoute: () => rootRouteImport,
+} as any)
+const TionFeedIndexRoute = TionFeedIndexRouteImport.update({
+  id: '/tion-feed/',
+  path: '/tion-feed/',
+  getParentRoute: () => rootRouteImport,
+} as any)
+const TionFeedSplatRoute = TionFeedSplatRouteImport.update({
+  id: '/tion-feed/$',
+  path: '/tion-feed/$',
+  getParentRoute: () => rootRouteImport,
+} as any)
 
 export interface FileRoutesByFullPath {
   '/': typeof IndexRoute
+  '/ggs-price-list/$': typeof GgsPriceListSplatRoute
+  '/nempo-feed/$': typeof NempoFeedSplatRoute
+  '/tion-feed/$': typeof TionFeedSplatRoute
+  '/ggs-price-list/': typeof GgsPriceListIndexRoute
+  '/nempo-feed/': typeof NempoFeedIndexRoute
+  '/tion-feed/': typeof TionFeedIndexRoute
 }
 export interface FileRoutesByTo {
   '/': typeof IndexRoute
+  '/ggs-price-list/$': typeof GgsPriceListSplatRoute
+  '/nempo-feed/$': typeof NempoFeedSplatRoute
+  '/tion-feed/$': typeof TionFeedSplatRoute
+  '/ggs-price-list': typeof GgsPriceListIndexRoute
+  '/nempo-feed': typeof NempoFeedIndexRoute
+  '/tion-feed': typeof TionFeedIndexRoute
 }
 export interface FileRoutesById {
   __root__: typeof rootRouteImport
   '/': typeof IndexRoute
+  '/ggs-price-list/$': typeof GgsPriceListSplatRoute
+  '/nempo-feed/$': typeof NempoFeedSplatRoute
+  '/tion-feed/$': typeof TionFeedSplatRoute
+  '/ggs-price-list/': typeof GgsPriceListIndexRoute
+  '/nempo-feed/': typeof NempoFeedIndexRoute
+  '/tion-feed/': typeof TionFeedIndexRoute
 }
 export interface FileRouteTypes {
   fileRoutesByFullPath: FileRoutesByFullPath
-  fullPaths: '/'
+  fullPaths:
+    | '/'
+    | '/ggs-price-list/$'
+    | '/nempo-feed/$'
+    | '/tion-feed/$'
+    | '/ggs-price-list/'
+    | '/nempo-feed/'
+    | '/tion-feed/'
   fileRoutesByTo: FileRoutesByTo
-  to: '/'
-  id: '__root__' | '/'
+  to:
+    | '/'
+    | '/ggs-price-list/$'
+    | '/nempo-feed/$'
+    | '/tion-feed/$'
+    | '/ggs-price-list'
+    | '/nempo-feed'
+    | '/tion-feed'
+  id:
+    | '__root__'
+    | '/'
+    | '/ggs-price-list/$'
+    | '/nempo-feed/$'
+    | '/tion-feed/$'
+    | '/ggs-price-list/'
+    | '/nempo-feed/'
+    | '/tion-feed/'
   fileRoutesById: FileRoutesById
 }
 export interface RootRouteChildren {
   IndexRoute: typeof IndexRoute
+  GgsPriceListSplatRoute: typeof GgsPriceListSplatRoute
+  NempoFeedSplatRoute: typeof NempoFeedSplatRoute
+  TionFeedSplatRoute: typeof TionFeedSplatRoute
+  GgsPriceListIndexRoute: typeof GgsPriceListIndexRoute
+  NempoFeedIndexRoute: typeof NempoFeedIndexRoute
+  TionFeedIndexRoute: typeof TionFeedIndexRoute
 }
 
 declare module '@tanstack/react-router' {
@@ -48,11 +130,59 @@ declare module '@tanstack/react-router' {
       preLoaderRoute: typeof IndexRouteImport
       parentRoute: typeof rootRouteImport
     }
+    '/ggs-price-list/': {
+      id: '/ggs-price-list/'
+      path: '/ggs-price-list'
+      fullPath: '/ggs-price-list/'
+      preLoaderRoute: typeof GgsPriceListIndexRouteImport
+      parentRoute: typeof rootRouteImport
+    }
+    '/ggs-price-list/$': {
+      id: '/ggs-price-list/$'
+      path: '/ggs-price-list/$'
+      fullPath: '/ggs-price-list/$'
+      preLoaderRoute: typeof GgsPriceListSplatRouteImport
+      parentRoute: typeof rootRouteImport
+    }
+    '/nempo-feed/': {
+      id: '/nempo-feed/'
+      path: '/nempo-feed'
+      fullPath: '/nempo-feed/'
+      preLoaderRoute: typeof NempoFeedIndexRouteImport
+      parentRoute: typeof rootRouteImport
+    }
+    '/nempo-feed/$': {
+      id: '/nempo-feed/$'
+      path: '/nempo-feed/$'
+      fullPath: '/nempo-feed/$'
+      preLoaderRoute: typeof NempoFeedSplatRouteImport
+      parentRoute: typeof rootRouteImport
+    }
+    '/tion-feed/': {
+      id: '/tion-feed/'
+      path: '/tion-feed'
+      fullPath: '/tion-feed/'
+      preLoaderRoute: typeof TionFeedIndexRouteImport
+      parentRoute: typeof rootRouteImport
+    }
+    '/tion-feed/$': {
+      id: '/tion-feed/$'
+      path: '/tion-feed/$'
+      fullPath: '/tion-feed/$'
+      preLoaderRoute: typeof TionFeedSplatRouteImport
+      parentRoute: typeof rootRouteImport
+    }
   }
 }
 
 const rootRouteChildren: RootRouteChildren = {
   IndexRoute: IndexRoute,
+  GgsPriceListSplatRoute: GgsPriceListSplatRoute,
+  NempoFeedSplatRoute: NempoFeedSplatRoute,
+  TionFeedSplatRoute: TionFeedSplatRoute,
+  GgsPriceListIndexRoute: GgsPriceListIndexRoute,
+  NempoFeedIndexRoute: NempoFeedIndexRoute,
+  TionFeedIndexRoute: TionFeedIndexRoute,
 }
 export const routeTree = rootRouteImport
   ._addFileChildren(rootRouteChildren)
