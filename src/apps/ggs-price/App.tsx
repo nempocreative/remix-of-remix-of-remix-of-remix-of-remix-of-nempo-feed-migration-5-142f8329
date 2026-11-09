@@ -1,4 +1,4 @@
-import type { CSSProperties } from 'react';
+import { useLayoutEffect, useRef, type CSSProperties } from 'react';
 import { Clock3, Download, Printer, Scissors } from 'lucide-react';
 import background from '@/apps/ggs-price/assets/ggs-price-a4-background.jpg.asset.json';
 import { GGS_PRICE_CONTACT, GGS_PRICE_PAGES, type PricePage } from '@/apps/ggs-price/price-list';
@@ -14,9 +14,29 @@ function A4Page({ page }: { page: PricePage }) {
     '--title': PT(page.titleSize),
     '--label': PT(page.labelSize),
   } as CSSProperties;
+  const ref = useRef<HTMLDivElement>(null);
+
+  // Shrink a row's text until name + price fit on one line.
+  useLayoutEffect(() => {
+    const fit = () => {
+      ref.current?.querySelectorAll<HTMLElement>('.ggpr-row').forEach((row) => {
+        let f = 1;
+        row.style.fontSize = '';
+        while (row.scrollWidth > row.clientWidth + 1 && f > 0.6) {
+          f -= 0.03;
+          row.style.fontSize = `calc(var(--text) * ${f.toFixed(2)})`;
+        }
+      });
+    };
+    fit();
+    document.fonts?.ready.then(fit);
+    const ro = new ResizeObserver(fit);
+    if (ref.current) ro.observe(ref.current);
+    return () => ro.disconnect();
+  }, []);
 
   return (
-    <div className="ggpr-page">
+    <div className="ggpr-page" ref={ref}>
       <div className="ggpr-art" style={vars}>
         <img className="ggpr-bg" src={background.url} alt="" draggable={false} />
 
