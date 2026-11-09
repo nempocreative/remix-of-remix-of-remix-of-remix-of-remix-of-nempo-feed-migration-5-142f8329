@@ -1,11 +1,11 @@
 {
-  "asset_id": "57e7374b-26f5-42db-922d-a58d3a3d8120",
-  "content_type": "image/png",
-  "created_at": "2026-11-08T13:27:06Z",
+  "version": 1,
+  "asset_id": "747a8451-ebb9-4e40-bea4-174baf427b80",
+  "project_id": "2077d2fe-f49e-4189-b9be-69e9e1844ef0",
+  "url": "/__l5e/assets-v1/747a8451-ebb9-4e40-bea4-174baf427b80/ggs-feed-26-kids-hair-treatment.png",
+  "r2_key": "a/v1/2077d2fe-f49e-4189-b9be-69e9e1844ef0/747a8451-ebb9-4e40-bea4-174baf427b80/ggs-feed-26-kids-hair-treatment.png",
   "original_filename": "ggs-feed-26-kids-hair-treatment.png",
-  "project_id": "b7330b5b-7004-4a19-b5d3-2aa0c26cd401",
-  "r2_key": "a/v1/b7330b5b-7004-4a19-b5d3-2aa0c26cd401/57e7374b-26f5-42db-922d-a58d3a3d8120/ggs-feed-26-kids-hair-treatment.png",
   "size": 1999581,
-  "url": "/__l5e/assets-v1/57e7374b-26f5-42db-922d-a58d3a3d8120/ggs-feed-26-kids-hair-treatment.png",
-  "version": 1
+  "content_type": "image/png",
+  "created_at": "2026-11-09T12:45:24Z"
 }

@@ -1,11 +1,11 @@
 {
-  "asset_id": "6bcfe84d-69a5-439b-b9c5-8fc3c668ed72",
-  "content_type": "image/png",
-  "created_at": "2026-11-08T15:15:46Z",
+  "version": 1,
+  "asset_id": "20d5dabc-18e1-40cd-b96b-e0b5db1d58e4",
+  "project_id": "2077d2fe-f49e-4189-b9be-69e9e1844ef0",
+  "url": "/__l5e/assets-v1/20d5dabc-18e1-40cd-b96b-e0b5db1d58e4/nempo-feed-43-divisi-event-management.png",
+  "r2_key": "a/v1/2077d2fe-f49e-4189-b9be-69e9e1844ef0/20d5dabc-18e1-40cd-b96b-e0b5db1d58e4/nempo-feed-43-divisi-event-management.png",
   "original_filename": "nempo-feed-43-divisi-event-management.png",
-  "project_id": "b7330b5b-7004-4a19-b5d3-2aa0c26cd401",
-  "r2_key": "a/v1/b7330b5b-7004-4a19-b5d3-2aa0c26cd401/6bcfe84d-69a5-439b-b9c5-8fc3c668ed72/nempo-feed-43-divisi-event-management.png",
   "size": 14068327,
-  "url": "/__l5e/assets-v1/6bcfe84d-69a5-439b-b9c5-8fc3c668ed72/nempo-feed-43-divisi-event-management.png",
-  "version": 1
+  "content_type": "image/png",
+  "created_at": "2026-11-09T12:49:29Z"
 }
