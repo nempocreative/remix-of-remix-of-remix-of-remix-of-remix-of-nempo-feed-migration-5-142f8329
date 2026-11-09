@@ -1,11 +1,11 @@
 {
-  "version": 1,
   "asset_id": "67e60f80-6f26-49cc-8137-04d42f599647",
-  "project_id": "72a19872-269a-4680-8550-81fd4fabb918",
-  "url": "/__l5e/assets-v1/67e60f80-6f26-49cc-8137-04d42f599647/tion-slide-3-cafe-enhanced.png",
-  "r2_key": "a/v1/72a19872-269a-4680-8550-81fd4fabb918/67e60f80-6f26-49cc-8137-04d42f599647/tion-slide-3-cafe-enhanced.png",
-  "original_filename": "tion-slide-3-cafe-enhanced.png",
-  "size": 2028715,
   "content_type": "image/png",
-  "created_at": "2026-11-09T17:20:09Z"
+  "created_at": "2026-11-09T17:20:09Z",
+  "original_filename": "tion-slide-3-cafe-enhanced.png",
+  "project_id": "abea1ef7-689f-4d7e-ac16-5636f6d3e7c4",
+  "r2_key": "a/v1/abea1ef7-689f-4d7e-ac16-5636f6d3e7c4/67e60f80-6f26-49cc-8137-04d42f599647/tion-slide-3-cafe-enhanced.png",
+  "size": 2028715,
+  "url": "/__l5e/assets-v1/67e60f80-6f26-49cc-8137-04d42f599647/tion-slide-3-cafe-enhanced.png",
+  "version": 1
 }

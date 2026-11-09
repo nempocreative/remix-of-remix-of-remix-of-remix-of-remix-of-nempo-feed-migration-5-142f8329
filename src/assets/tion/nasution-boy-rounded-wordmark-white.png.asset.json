@@ -1,11 +1,11 @@
 {
-  "version": 1,
   "asset_id": "aeb30830-0b0d-4612-aa3d-f9cd4f2c0621",
-  "project_id": "72a19872-269a-4680-8550-81fd4fabb918",
-  "url": "/__l5e/assets-v1/aeb30830-0b0d-4612-aa3d-f9cd4f2c0621/nasution-boy-rounded-wordmark-white.png",
-  "r2_key": "a/v1/72a19872-269a-4680-8550-81fd4fabb918/aeb30830-0b0d-4612-aa3d-f9cd4f2c0621/nasution-boy-rounded-wordmark-white.png",
-  "original_filename": "nasution-boy-rounded-wordmark-white.png",
-  "size": 78606,
   "content_type": "image/png",
-  "created_at": "2026-11-09T17:20:41Z"
+  "created_at": "2026-11-09T17:20:41Z",
+  "original_filename": "nasution-boy-rounded-wordmark-white.png",
+  "project_id": "abea1ef7-689f-4d7e-ac16-5636f6d3e7c4",
+  "r2_key": "a/v1/abea1ef7-689f-4d7e-ac16-5636f6d3e7c4/aeb30830-0b0d-4612-aa3d-f9cd4f2c0621/nasution-boy-rounded-wordmark-white.png",
+  "size": 78606,
+  "url": "/__l5e/assets-v1/aeb30830-0b0d-4612-aa3d-f9cd4f2c0621/nasution-boy-rounded-wordmark-white.png",
+  "version": 1
 }
