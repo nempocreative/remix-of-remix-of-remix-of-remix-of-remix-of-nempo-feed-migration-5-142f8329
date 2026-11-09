@@ -192,9 +192,9 @@ export const GGS_PRICE_PAGES: PricePage[] = [
     labelSize: 47.4,
     textSize: 15.8,
     titleSize: 17.5,
-    rowHeight: 34,
+    rowHeight: 32,
     right: 349,
-    top: 179,
+    top: 156,
     sections: [
       {
         title: 'MASSAGE SERVICE',

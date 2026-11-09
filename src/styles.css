@@ -137,11 +137,12 @@
 }
 /* GGS A4 printed price list: colours sampled from the owner's Canva print file. */
 .ggpr-root {
-  --ggpr-page: #f48fb3;
+  --ggpr-page: #f6b8cd;
   --ggpr-text: #ffffff;
-  --ggpr-label: color-mix(in srgb, #ffffff 86%, #f48fb3);
-  --ggpr-rule: color-mix(in srgb, #ffffff 92%, transparent);
-  --ggpr-accent: #ec4f85;
+  --ggpr-label: color-mix(in srgb, #ffffff 88%, #f48fb3);
+  --ggpr-rule: color-mix(in srgb, #ffffff 70%, transparent);
+  --ggpr-accent: #b03060;
+  --ggpr-ornament: #8f2149;
   --ggpr-desk: #2a1520;
   --ggpr-desk-text: #fbe3ec;
   --ggpr-desk-muted: color-mix(in srgb, #fbe3ec 65%, transparent);
