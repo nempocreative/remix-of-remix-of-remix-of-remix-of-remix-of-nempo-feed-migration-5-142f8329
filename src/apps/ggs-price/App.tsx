@@ -98,13 +98,13 @@ export default function App() {
       <header className="ggpr-toolbar">
         <div>
           <h1>GGS Price List · A4 Cetak</h1>
-          <p>6 halaman · 210 × 297 mm · tanpa margin</p>
+          <p>{GGS_PRICE_PAGES.length} halaman · 210 × 297 mm · tanpa margin</p>
         </div>
         <div className="ggpr-actions">
           <a className="ggpr-btn ggpr-btn--ghost" href="/nempo-feed">
             Kembali
           </a>
-          <a className="ggpr-btn" href="/ggs-price-list/GGS-Price-List-A4.pdf" download="GGS-Price-List-A4.pdf">
+          <a className="ggpr-btn" href="/ggs-price-list/GGS-Price-List-A4-print.pdf" download="GGS-Price-List-A4.pdf">
             <Download size={16} aria-hidden /> Download PDF
           </a>
           <button type="button" className="ggpr-btn" onClick={() => window.print()}>

@@ -37,3 +37,4 @@ use the editor.
 - Every `.asset.json` pointer must belong to this project (re-upload with `lovable-assets create` when copying from another project); why: hosted media URLs are project-scoped and 404 elsewhere.
 
 - GGS annual calendar keeps its 5:7 export artboard, UTC date calculation, and scoped ggcal styles with global palette tokens; dated national holidays and non-holiday commemorations live in tested ggs-calendar-dates with official source citations, separately from optional collective leave; why: print and preview must share an accurate, legible twelve-month layout.
+- GGS price-list PDFs are prebuilt from the live print layout with embedded static font instances using scripts/export-ggs-price-pdf.py; regenerate when its data or design changes, keeping text vector instead of flattening pages to screenshots.
