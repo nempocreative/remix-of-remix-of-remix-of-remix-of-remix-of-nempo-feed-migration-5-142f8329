@@ -267,7 +267,7 @@ export const GGS_PRICE_PAGES: PricePage[] = [
     labelSize: 47.4,
     textSize: UNIFORM_TEXT_SIZE,
     titleSize: UNIFORM_TITLE_SIZE,
-    rowHeight: 45,
+    rowHeight: 132,
     right: UNIFORM_RIGHT,
     top: UNIFORM_TOP,
     sections: [
