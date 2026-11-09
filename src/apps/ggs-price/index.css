@@ -146,7 +146,7 @@
   width: calc(72 * var(--pt));
   height: calc(2.4 * var(--pt));
   border-radius: calc(2 * var(--pt));
-  background: linear-gradient(90deg, var(--ggpr-accent), color-mix(in srgb, var(--ggpr-accent) 15%, transparent));
+  background: linear-gradient(90deg, var(--ggpr-text), color-mix(in srgb, var(--ggpr-text) 10%, transparent));
 }
 .ggpr-subtitle {
   margin: 0;
