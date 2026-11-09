@@ -24,7 +24,7 @@ export function GgsHairBeautySlide({ exportRef }: { exportRef?: RefObject<HTMLEl
           <em>Mulai dari</em>
           <em>Rambut</em>
         </h2>
-        <p className="gghb-sub">Rambut sehat &amp; berkilau bikin tampilan makin segar dan percaya diri.</p>
+        <p className="gghb-sub">Rambut sehat &amp; berkilau bikin kamu tampil segar dan makin percaya diri.</p>
         <ul className="gghb-list">
           {TREATMENTS.map((name) => (
             <li key={name}>
