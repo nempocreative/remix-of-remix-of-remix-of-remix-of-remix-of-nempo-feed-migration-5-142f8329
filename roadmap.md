@@ -11,4 +11,5 @@
 - [x] Perbarui PDF unduhan dengan teks tajam untuk cetak; periksa seluruh halaman dan tombol unduhan (8 halaman, vector text)
 - [x] Pulihkan 72 foto/video yang hilang setelah remix ke penyimpanan proyek ini
 - [x] Add Body Treatment page (waxing, bekam, lulur, masker) and "Body massage + bekam" bundling; regenerate 8-page print PDF
+- [ ] Restore Tion Feed slide 1 from github.com/nempocreative/organizer
 - [ ] "Body massage + bekam" duration — waiting on owner
