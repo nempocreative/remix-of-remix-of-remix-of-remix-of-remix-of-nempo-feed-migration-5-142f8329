@@ -1,5 +1,5 @@
 import type { CSSProperties } from 'react';
-import { Clock3, Download, Printer } from 'lucide-react';
+import { Clock3, Download, Printer, Scissors } from 'lucide-react';
 import background from '@/apps/ggs-price/assets/ggs-price-a4-background.jpg.asset.json';
 import { GGS_PRICE_CONTACT, GGS_PRICE_PAGES, type PricePage } from '@/apps/ggs-price/price-list';
 
@@ -30,7 +30,12 @@ function A4Page({ page }: { page: PricePage }) {
         <div className="ggpr-list">
           {page.sections.map((section, i) => (
             <section key={i} className={`ggpr-section${section.title ? ' has-title' : ''}`}>
-              {section.title && <h2 className="ggpr-title">{section.title}</h2>}
+              {section.title && (
+                <h2 className="ggpr-title">
+                  <Scissors className="ggpr-title-icon" aria-hidden />
+                  {section.title}
+                </h2>
+              )}
               {section.subtitle && <h3 className="ggpr-subtitle">{section.subtitle}</h3>}
               {section.items.map((item) => (
                 <div key={item.name} className={`ggpr-row${item.duration ? ' ggpr-row--bundle' : ''}`}>
