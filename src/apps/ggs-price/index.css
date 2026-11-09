@@ -152,7 +152,7 @@
   transform: translateY(calc(-1 * var(--pt)));
 }
 .ggpr-row .price { white-space: nowrap; font-variant-numeric: tabular-nums; font-weight: 500; }
-.ggpr-row--bundle { align-items: flex-start; padding-top: calc(var(--text) * .7); padding-bottom: calc(var(--text) * .55); }
+.ggpr-row--bundle { align-items: flex-start; padding-top: calc(var(--text) * .42); padding-bottom: calc(var(--text) * .3); }
 .ggpr-row--bundle .ggpr-leader { align-self: flex-start; margin-top: calc(var(--text) * .85); }
 .ggpr-name { display: block; }
 .ggpr-dur {
