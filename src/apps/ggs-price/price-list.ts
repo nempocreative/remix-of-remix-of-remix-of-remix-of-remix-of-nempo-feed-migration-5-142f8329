@@ -76,7 +76,7 @@ export const GGS_PRICE_PAGES: PricePage[] = [
     labelSize: 37.4,
     textSize: 17.5,
     titleSize: 19.5,
-    rowHeight: 37.9,
+    rowHeight: 35,
     right: 382,
     top: 187,
     sections: [
@@ -89,6 +89,7 @@ export const GGS_PRICE_PAGES: PricePage[] = [
           { name: 'Cuci catok/curly rambut sambung', price: '60.000' },
           { name: 'Cuci curly', price: '55.000' },
           { name: 'Curly rambut', price: '45.000' },
+          { name: 'Curly rambut sambung', price: '55.000' },
           { name: 'Catok rambut pendek', price: '40.000' },
           { name: 'Catok rambut panjang', price: '45.000' },
           { name: 'Catok rambut sambung', price: '60.000' },
