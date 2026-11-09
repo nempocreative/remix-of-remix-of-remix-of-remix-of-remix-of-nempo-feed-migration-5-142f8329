@@ -14,4 +14,5 @@
 - [x] Restore Tion Feed slides 1–12 (opens on slide 8) from github.com/nempocreative/organizer
 - [x] GGS Feed slide 23: replace photo with the owner's upload and animate the hands (sharp MP4 download)
 - [x] GGS Feed slide 29: hair treatment "mempercantik diri" with the owner's retouched salon photo + PNG download
+- [x] GGS Feed slide 29 v2: AI-made background behind the original (unchanged-face) people, no frames/shapes, re-capture PNG
 - [ ] "Body massage + bekam" duration — waiting on owner

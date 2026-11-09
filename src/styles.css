@@ -125,15 +125,12 @@
 /* GGS Feed slide 29 (3:4): hair treatment self-care palette. */
 .gghb-root {
   --gghb-ink: #3d0b2a;
-  --gghb-ink-soft: #7a3a5c;
-  --gghb-paper: #fbf1f4;
-  --gghb-glow: radial-gradient(circle, #f6c9d8 0%, color-mix(in srgb, #f6c9d8 0%, transparent) 70%);
-  --gghb-primary: #b0185a;
-  --gghb-on-primary: #ffffff;
-  --gghb-card: #ffffff;
-  --gghb-line: color-mix(in srgb, #3d0b2a 14%, transparent);
-  --gghb-shadow: 0 1.6cqw 4.4cqw color-mix(in srgb, #5a0f36 26%, transparent);
-  --gghb-badge-shadow: 0 .6cqw 1.8cqw color-mix(in srgb, #5a0f36 22%, transparent);
+  --gghb-ink-soft: #6e2f50;
+  --gghb-primary: #a8124f;
+  --gghb-backdrop: #f6dde4;
+  --gghb-shade: radial-gradient(48cqw 22cqw at 78% 8%, color-mix(in srgb, #fdf1f4 88%, transparent) 0%, color-mix(in srgb, #fdf1f4 0%, transparent) 100%), linear-gradient(90deg, color-mix(in srgb, #fdf1f4 82%, transparent) 0%, color-mix(in srgb, #fdf1f4 55%, transparent) 38%, color-mix(in srgb, #fdf1f4 0%, transparent) 62%);
+  --gghb-people-shadow: drop-shadow(-1.2cqw 1.2cqw 3cqw color-mix(in srgb, #5a0f36 28%, transparent));
+  --gghb-text-glow: 0 0 1.6cqw color-mix(in srgb, #fdf1f4 85%, transparent);
 }
 /* GGS Feed slide 28 (3:4): pedicure before/after palette. */
 .ggpd-root {
