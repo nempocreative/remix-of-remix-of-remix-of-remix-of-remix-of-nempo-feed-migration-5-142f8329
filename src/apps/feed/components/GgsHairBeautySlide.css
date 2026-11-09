@@ -1,5 +1,5 @@
 .gghb-root{position:relative;isolation:isolate;width:100%;aspect-ratio:3/4;overflow:hidden;container-type:inline-size;background:var(--gghb-backdrop);font-family:'DM Sans',sans-serif;color:var(--gghb-ink)}
-.gghb-backword{position:absolute;z-index:0;right:-3cqw;top:17cqw;margin:0;font-family:'Playfair Display',Georgia,serif;font-style:italic;font-weight:600;font-size:34cqw;line-height:1;letter-spacing:-.8cqw;color:var(--gghb-backword);white-space:nowrap;pointer-events:none}
+.gghb-backword{position:absolute;z-index:0;right:4cqw;top:19cqw;margin:0;font-family:'Playfair Display',Georgia,serif;font-style:italic;font-weight:600;font-size:27cqw;line-height:1;letter-spacing:-.8cqw;color:var(--gghb-backword);white-space:nowrap;pointer-events:none}
 .gghb-people{position:absolute;z-index:1;right:0;bottom:0;height:100cqw;width:auto;filter:var(--gghb-people-shadow)}
 .gghb-copy{position:absolute;z-index:2;left:6cqw;width:40cqw;top:25cqw;display:flex;flex-direction:column;align-items:flex-start}
 .gghb-kicker{margin:0;font-size:2.1cqw;font-weight:700;text-transform:uppercase;letter-spacing:.7cqw;color:var(--gghb-primary);white-space:nowrap}
