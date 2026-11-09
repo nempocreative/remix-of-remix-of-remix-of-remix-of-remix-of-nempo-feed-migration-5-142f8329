@@ -1,12 +1,13 @@
 import type { RefObject } from 'react';
 import { Sparkles } from 'lucide-react';
-import salonCutout from '@/assets/ggs-feed-29-hair-treatment-cutout.png';
+import salonBackdrop from '@/assets/ggs-feed-29-salon-backdrop.jpg';
+import salonPeople from '@/assets/ggs-feed-29-people-original.png';
 import ggsWatermark from '@/assets/ggs-header-footer-v2.png.asset.json';
 import './GgsHairBeautySlide.css';
 
 const TREATMENTS = ['Masker rambut', 'Treatment rambut bercabang', 'Treatment ketombe', 'Keratin treatment'];
 
-/** GGS Feed slide 29: hair treatment for self-care — the owner's retouched stylist + client cut-out blended straight into the backdrop, no frames or shapes. */
+/** GGS Feed slide 29: hair treatment for self-care — the owner's original stylist + client (unchanged pixels) cut out onto an AI salon backdrop, no frames or shapes. */
 export function GgsHairBeautySlide({ exportRef }: { exportRef?: RefObject<HTMLElement | null> }) {
   return (
     <div
@@ -14,13 +15,12 @@ export function GgsHairBeautySlide({ exportRef }: { exportRef?: RefObject<HTMLEl
       className="gghb-root"
       aria-label="GGS Beauty — Feed slide 29, hair treatment untuk mempercantik diri"
     >
-      <p className="gghb-backword" aria-hidden="true">
-        Glow
-      </p>
+      <img className="gghb-backdrop" src={salonBackdrop} alt="" aria-hidden="true" />
+      <span className="gghb-shade" aria-hidden="true" />
 
       <img
         className="gghb-people"
-        src={salonCutout}
+        src={salonPeople}
         alt="Stylist GGS Beauty merapikan rambut cokelat bergelombang pelanggan yang tersenyum"
       />
 
