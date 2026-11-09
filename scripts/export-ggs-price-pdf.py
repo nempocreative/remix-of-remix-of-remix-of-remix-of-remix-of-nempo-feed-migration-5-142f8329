@@ -77,6 +77,10 @@ async def main():
           await new Promise(resolve => requestAnimationFrame(() => requestAnimationFrame(resolve)));
         }''')
         count = await page.locator('.ggpr-page').count()
+        # Chromium 147 gets stuck when pdf() runs while print media is still
+        # emulated (outputs blank A5 landscape pages). Switching back to screen
+        # first makes pdf() apply the print stylesheet correctly.
+        await page.emulate_media(media='screen')
         OUTPUT.parent.mkdir(parents=True, exist_ok=True)
         await page.pdf(path=str(OUTPUT), format='A4', print_background=True,
                        prefer_css_page_size=True, margin={k: '0' for k in ['top','bottom','left','right']})

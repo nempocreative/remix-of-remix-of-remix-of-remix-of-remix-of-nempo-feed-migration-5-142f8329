@@ -233,12 +233,9 @@
   line-height: 1;
 }
 .ggpr-footer-text.pill {
-  color: var(--ggpr-accent);
+  color: #ffffff;
   font-size: calc(13.6 * var(--pt));
   width: calc(144 * var(--pt));
-  background: color-mix(in srgb, #ffffff 88%, transparent);
-  border-radius: 999px;
-  box-shadow: 0 calc(1 * var(--pt)) calc(4 * var(--pt)) color-mix(in srgb, var(--ggpr-ornament) 25%, transparent);
 }
 .ggpr-footer-text.ig { left: calc(50 * var(--pt)); }
 .ggpr-footer-text.wa { left: calc(398 * var(--pt)); letter-spacing: .02em; }
