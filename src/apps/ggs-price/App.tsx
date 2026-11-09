@@ -22,7 +22,11 @@ function A4Page({ page }: { page: PricePage }) {
       ref.current?.querySelectorAll<HTMLElement>('.ggpr-row').forEach((row) => {
         let f = 1;
         row.style.fontSize = '';
-        while (row.scrollWidth > row.clientWidth + 1 && f > 0.6) {
+        const need = () => {
+          const [name, , price] = Array.from(row.children) as HTMLElement[];
+          return (name?.scrollWidth ?? 0) + (price?.scrollWidth ?? 0) + row.clientWidth * 0.05;
+        };
+        while (need() > row.clientWidth && f > 0.6) {
           f -= 0.03;
           row.style.fontSize = `calc(var(--text) * ${f.toFixed(2)})`;
         }
