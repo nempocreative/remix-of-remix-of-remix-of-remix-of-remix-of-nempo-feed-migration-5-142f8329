@@ -12,5 +12,5 @@
 - [x] Pulihkan 72 foto/video yang hilang setelah remix ke penyimpanan proyek ini
 - [x] Add Body Treatment page (waxing, bekam, lulur, masker) and "Body massage + bekam" bundling; regenerate 8-page print PDF
 - [x] Restore Tion Feed slides 1–12 (opens on slide 8) from github.com/nempocreative/organizer
-- [ ] Slide 23: replace photo with the owner's upload and animate the hands
+- [ ] GGS Feed slide 23: replace photo with the owner's upload and animate the hands
 - [ ] "Body massage + bekam" duration — waiting on owner
