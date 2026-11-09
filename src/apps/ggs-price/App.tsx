@@ -19,7 +19,7 @@ function A4Page({ page }: { page: PricePage }) {
       <div className="ggpr-art" style={vars}>
         <img className="ggpr-bg" src={background.url} alt="" draggable={false} />
 
-        <img className="ggpr-logo" src="/nempo-feed/assets/ggs-beauty-logo.png" alt="GGS Beauty" draggable={false} />
+        <img className="ggpr-logo" src="/ggs-price-list/ggs-price-logo-round.png" alt="GGS Beauty" draggable={false} />
 
         <div className="ggpr-tagline">
           <strong>Grooming is better</strong>

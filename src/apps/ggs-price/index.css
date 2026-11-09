@@ -90,9 +90,9 @@
   top: calc(30 * var(--pt));
   width: calc(92 * var(--pt));
   height: calc(92 * var(--pt));
-  object-fit: contain;
+  object-fit: cover;
   border-radius: 50%;
-  box-shadow: 0 calc(2 * var(--pt)) calc(10 * var(--pt)) color-mix(in srgb, var(--ggpr-ornament) 45%, transparent);
+  clip-path: circle(50%);
   user-select: none;
 }
 .ggpr-tagline { position: absolute; left: calc(45 * var(--pt)); top: calc(41 * var(--pt)); line-height: 1; }
