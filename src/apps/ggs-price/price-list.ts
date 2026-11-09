@@ -193,6 +193,15 @@ export const GGS_PRICE_PAGES: PricePage[] = [
           { name: 'Panjang', price: '650.000 - 1.000.000' },
         ],
       },
+      {
+        title: 'KHUSUS TREATMENT ANAK',
+        items: [
+          { name: 'Potong rambut', price: '70.000' },
+          { name: 'Nail art', price: '35.000' },
+          { name: 'Creambath', price: '80.000' },
+          { name: 'Treatment kutu (1-5 tahun)', price: '120.000' },
+        ],
+      },
     ],
   },
   {
