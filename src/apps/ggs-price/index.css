@@ -71,6 +71,16 @@
   color: var(--ggpr-text);
 }
 .ggpr-bg { position: absolute; inset: 0; width: 100%; height: 100%; object-fit: cover; user-select: none; }
+.ggpr-art::after {
+  content: '';
+  position: absolute;
+  inset: 0;
+  pointer-events: none;
+  background: linear-gradient(165deg,
+    color-mix(in srgb, #d6336c 62%, transparent) 0%,
+    color-mix(in srgb, #e0558b 58%, transparent) 45%,
+    color-mix(in srgb, #c2255c 66%, transparent) 100%);
+}
 
 .ggpr-tagline { position: absolute; left: calc(45 * var(--pt)); top: calc(41 * var(--pt)); line-height: 1; }
 .ggpr-tagline strong {
@@ -95,7 +105,7 @@
   left: calc(60 * var(--pt));
   top: var(--top);
   width: var(--w);
-  text-shadow: 0 calc(.6 * var(--pt)) calc(2.4 * var(--pt)) color-mix(in srgb, var(--ggpr-ornament) 32%, transparent);
+  text-shadow: 0 calc(.8 * var(--pt)) calc(3 * var(--pt)) color-mix(in srgb, var(--ggpr-ornament) 55%, transparent);
 }
 .ggpr-section + .ggpr-section { margin-top: calc(var(--row) * .32); }
 .ggpr-section + .ggpr-section.has-title { margin-top: calc(var(--row) * .38); }
