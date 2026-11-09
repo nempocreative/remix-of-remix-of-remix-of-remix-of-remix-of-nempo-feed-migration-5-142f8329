@@ -9,3 +9,5 @@
 - [x] Potong cuci blow jadi 85.000
 - [x] Section Khusus treatment anak jadi halaman sendiri (7 lembar)
 - [ ] Perbarui PDF unduhan tujuh halaman dengan teks tajam untuk cetak; periksa seluruh halaman dan tombol unduhan
+- [x] Add Body Treatment page (waxing, bekam, lulur, masker) and "Body massage + bekam" bundling; regenerate 8-page print PDF
+- [ ] "Body massage + bekam" duration — waiting on owner

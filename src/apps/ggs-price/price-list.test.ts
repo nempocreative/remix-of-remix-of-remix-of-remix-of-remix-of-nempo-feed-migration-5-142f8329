@@ -2,8 +2,8 @@ import { describe, expect, it } from 'vitest';
 import { GGS_PRICE_CONTACT, GGS_PRICE_PAGES, findGgsPrice } from './price-list';
 
 describe('GGS A4 price list', () => {
-  it('has the seven pages of the printed menu', () => {
-    expect(GGS_PRICE_PAGES).toHaveLength(7);
+  it('has the eight pages of the printed menu', () => {
+    expect(GGS_PRICE_PAGES).toHaveLength(8);
   });
 
   it('keeps nail art prices from the owner file', () => {
@@ -44,6 +44,27 @@ describe('GGS A4 price list', () => {
     expect(findGgsPrice('Pijat urut tradisional khusus pria')).toBe('Start 100K');
     expect(findGgsPrice('MeniPedi')).toBe('120.000');
     expect(findGgsPrice('Body massage + reflexy + kerok')).toBe('195.000');
+  });
+
+  it('lists the body treatment prices the owner asked for', () => {
+    const page = GGS_PRICE_PAGES.find((p) => p.id === 'body-treatment')!;
+    expect(page.sections[0].title).toBe('BODY TREATMENT');
+    const prices = Object.fromEntries(page.sections[0].items.map((i) => [i.name, i.price]));
+    expect(prices['Waxing tangan']).toBe('85.000');
+    expect(prices['Waxing kaki']).toBe('130.000');
+    expect(prices['Waxing tangan + kaki']).toBe('190.000');
+    expect(prices['Waxing ketiak + tangan + kaki']).toBe('230.000');
+    expect(prices['Bekam full body']).toBe('140.000');
+    expect(prices['Bekam punggung']).toBe('75.000');
+    expect(prices['Bekam tangan']).toBe('50.000');
+    expect(prices['Bekam kaki']).toBe('50.000');
+    expect(prices['Lulur scrub badan']).toBe('80.000');
+    expect(prices['Masker badan']).toBe('60.000');
+    expect(prices['Lulur + masker']).toBe('120.000');
+  });
+
+  it('adds body massage + bekam to the bundling package', () => {
+    expect(findGgsPrice('Body massage + bekam')).toBe('170.000');
   });
 
   it('prints the salon contact', () => {
