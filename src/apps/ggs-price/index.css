@@ -78,9 +78,9 @@
   z-index: 0;
   pointer-events: none;
   background: linear-gradient(165deg,
-    color-mix(in srgb, #d6336c 62%, transparent) 0%,
-    color-mix(in srgb, #e0558b 58%, transparent) 45%,
-    color-mix(in srgb, #c2255c 66%, transparent) 100%);
+    color-mix(in srgb, #c2185b 80%, transparent) 0%,
+    color-mix(in srgb, #d63a78 78%, transparent) 45%,
+    color-mix(in srgb, #ad1457 84%, transparent) 100%);
 }
 
 .ggpr-tagline, .ggpr-list, .ggpr-dot, .ggpr-label, .ggpr-footer-text, .ggpr-logo { z-index: 1; }
@@ -102,7 +102,7 @@
   font-weight: 700;
   font-size: calc(23.5 * var(--pt));
   letter-spacing: .01em;
-  text-shadow: 0 calc(.8 * var(--pt)) calc(3 * var(--pt)) color-mix(in srgb, var(--ggpr-ornament) 30%, transparent);
+  
 }
 .ggpr-tagline em {
   display: block;
@@ -118,7 +118,6 @@
   left: calc(60 * var(--pt));
   top: var(--top);
   width: var(--w);
-  text-shadow: 0 calc(.8 * var(--pt)) calc(3 * var(--pt)) color-mix(in srgb, var(--ggpr-ornament) 55%, transparent);
 }
 .ggpr-section + .ggpr-section { margin-top: calc(var(--row) * .32); }
 .ggpr-section + .ggpr-section.has-title { margin-top: calc(var(--row) * .38); }
@@ -136,7 +135,7 @@
   width: .9em;
   height: .9em;
   margin-right: .4em;
-  color: var(--ggpr-accent);
+  color: var(--ggpr-text);
   vertical-align: -.08em;
   filter: drop-shadow(0 calc(.6 * var(--pt)) calc(1.6 * var(--pt)) color-mix(in srgb, var(--ggpr-ornament) 50%, transparent));
 }
@@ -147,7 +146,7 @@
   width: calc(72 * var(--pt));
   height: calc(2.4 * var(--pt));
   border-radius: calc(2 * var(--pt));
-  background: linear-gradient(90deg, var(--ggpr-accent), color-mix(in srgb, var(--ggpr-accent) 15%, transparent));
+  background: linear-gradient(90deg, var(--ggpr-text), color-mix(in srgb, var(--ggpr-text) 10%, transparent));
 }
 .ggpr-subtitle {
   margin: 0;
@@ -179,7 +178,8 @@
 .ggpr-row .price { white-space: nowrap; font-variant-numeric: tabular-nums; font-weight: 500; }
 .ggpr-row--bundle { align-items: flex-start; padding-top: calc(var(--text) * .42); padding-bottom: calc(var(--text) * .3); }
 .ggpr-row--bundle .ggpr-leader { align-self: flex-start; margin-top: calc(var(--text) * .85); }
-.ggpr-name { display: block; }
+.ggpr-name { display: block; white-space: nowrap; }
+.ggpr-row > span:first-child { flex: none; }
 .ggpr-dur {
   display: flex;
   align-items: center;
