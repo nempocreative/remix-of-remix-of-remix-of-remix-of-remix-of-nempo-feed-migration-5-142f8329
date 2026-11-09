@@ -104,7 +104,7 @@ export default function App() {
           <a className="ggpr-btn ggpr-btn--ghost" href="/nempo-feed">
             Kembali
           </a>
-          <a className="ggpr-btn" href="/ggs-price-list/GGS-Price-List-A4-v2.pdf" download="GGS-Price-List-A4.pdf">
+          <a className="ggpr-btn" href="/ggs-price-list/GGS-Price-List-A4-v2.pdf?v=20261109c" download="GGS-Price-List-A4.pdf">
             <Download size={16} aria-hidden /> Download PDF
           </a>
           <button type="button" className="ggpr-btn" onClick={() => window.print()}>
