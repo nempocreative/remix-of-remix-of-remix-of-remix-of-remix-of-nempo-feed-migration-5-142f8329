@@ -41,6 +41,7 @@ function A4Page({ page }: { page: PricePage }) {
                       </span>
                     )}
                   </span>
+                  <span className="ggpr-leader" aria-hidden />
                   <span className="price">{item.price}</span>
                 </div>
               ))}
