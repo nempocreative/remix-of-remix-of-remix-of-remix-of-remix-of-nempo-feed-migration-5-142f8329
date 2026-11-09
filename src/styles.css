@@ -122,6 +122,19 @@
   --ggkt-primary: #b0185a;
   --ggkt-line: color-mix(in srgb, #3d0b2a 16%, transparent);
 }
+/* GGS Feed slide 29 (3:4): hair treatment self-care palette. */
+.gghb-root {
+  --gghb-ink: #3d0b2a;
+  --gghb-ink-soft: #7a3a5c;
+  --gghb-paper: #fbf1f4;
+  --gghb-glow: radial-gradient(circle, #f6c9d8 0%, color-mix(in srgb, #f6c9d8 0%, transparent) 70%);
+  --gghb-primary: #b0185a;
+  --gghb-on-primary: #ffffff;
+  --gghb-card: #ffffff;
+  --gghb-line: color-mix(in srgb, #3d0b2a 14%, transparent);
+  --gghb-shadow: 0 1.6cqw 4.4cqw color-mix(in srgb, #5a0f36 26%, transparent);
+  --gghb-badge-shadow: 0 .6cqw 1.8cqw color-mix(in srgb, #5a0f36 22%, transparent);
+}
 /* GGS Feed slide 28 (3:4): pedicure before/after palette. */
 .ggpd-root {
   --ggpd-ink: #3d0b2a;
