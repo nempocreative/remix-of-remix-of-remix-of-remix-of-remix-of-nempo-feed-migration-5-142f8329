@@ -83,7 +83,18 @@
     color-mix(in srgb, #c2255c 66%, transparent) 100%);
 }
 
-.ggpr-tagline, .ggpr-list, .ggpr-dot, .ggpr-label, .ggpr-footer-text { z-index: 1; }
+.ggpr-tagline, .ggpr-list, .ggpr-dot, .ggpr-label, .ggpr-footer-text, .ggpr-logo { z-index: 1; }
+.ggpr-logo {
+  position: absolute;
+  right: calc(34 * var(--pt));
+  top: calc(30 * var(--pt));
+  width: calc(92 * var(--pt));
+  height: calc(92 * var(--pt));
+  object-fit: contain;
+  border-radius: 50%;
+  box-shadow: 0 calc(2 * var(--pt)) calc(10 * var(--pt)) color-mix(in srgb, var(--ggpr-ornament) 45%, transparent);
+  user-select: none;
+}
 .ggpr-tagline { position: absolute; left: calc(45 * var(--pt)); top: calc(41 * var(--pt)); line-height: 1; }
 .ggpr-tagline strong {
   display: block;
