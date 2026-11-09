@@ -2,8 +2,8 @@ import { describe, expect, it } from 'vitest';
 import { GGS_PRICE_CONTACT, GGS_PRICE_PAGES, findGgsPrice } from './price-list';
 
 describe('GGS A4 price list', () => {
-  it('has the six pages of the printed menu', () => {
-    expect(GGS_PRICE_PAGES).toHaveLength(6);
+  it('has the seven pages of the printed menu', () => {
+    expect(GGS_PRICE_PAGES).toHaveLength(7);
   });
 
   it('keeps nail art prices from the owner file', () => {
@@ -14,9 +14,24 @@ describe('GGS A4 price list', () => {
 
   it('keeps hair prices from the owner file', () => {
     expect(findGgsPrice('Cuci rambut')).toBe('25.000');
-    expect(findGgsPrice('Potong cuci curly')).toBe('70.000');
+    expect(findGgsPrice('Potong cuci curly')).toBe('90.000');
+    expect(findGgsPrice('Potong cuci catok')).toBe('85.000');
+    expect(findGgsPrice('Potong cuci blow')).toBe('85.000');
+    expect(findGgsPrice('Catok rambut sambung')).toBe('50.000');
+    expect(findGgsPrice('Curly rambut sambung')).toBe('55.000');
     expect(findGgsPrice('Creambath L’Oréal warna')).toBe('175.000');
     expect(findGgsPrice('Treatment kutu dewasa')).toBe('175.000');
+  });
+
+  it('lists the kids treatment prices the owner asked for', () => {
+    const page = GGS_PRICE_PAGES.find((p) => p.id === 'kids-treatment')!;
+    expect(page.sections[0].title).toBe('KHUSUS TREATMENT ANAK');
+    expect(page.sections[0].items).toEqual([
+      { name: 'Potong rambut', price: '70.000' },
+      { name: 'Nail art', price: '35.000' },
+      { name: 'Creambath', price: '80.000' },
+      { name: 'Treatment kutu (1-5 tahun)', price: '120.000' },
+    ]);
   });
 
   it('keeps colouring bleaching ranges separate from no bleaching', () => {

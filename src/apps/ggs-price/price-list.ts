@@ -193,15 +193,6 @@ export const GGS_PRICE_PAGES: PricePage[] = [
           { name: 'Panjang', price: '650.000 - 1.000.000' },
         ],
       },
-      {
-        title: 'KHUSUS TREATMENT ANAK',
-        items: [
-          { name: 'Potong rambut', price: '70.000' },
-          { name: 'Nail art', price: '35.000' },
-          { name: 'Creambath', price: '80.000' },
-          { name: 'Treatment kutu (1-5 tahun)', price: '120.000' },
-        ],
-      },
     ],
   },
   {
@@ -266,6 +257,27 @@ export const GGS_PRICE_PAGES: PricePage[] = [
           { name: 'Body massage + reflexy + scrub', price: '200.000', duration: '120 menit' },
           { name: 'Body massage + reflexy + totok wajah', price: '200.000', duration: '120 menit' },
           { name: 'Body massage + reflexy + kerok', price: '195.000', duration: '120 menit' },
+        ],
+      },
+    ],
+  },
+  {
+    id: 'kids-treatment',
+    label: 'KIDS',
+    labelSize: 47.4,
+    textSize: UNIFORM_TEXT_SIZE,
+    titleSize: UNIFORM_TITLE_SIZE,
+    rowHeight: 45,
+    right: UNIFORM_RIGHT,
+    top: UNIFORM_TOP,
+    sections: [
+      {
+        title: 'KHUSUS TREATMENT ANAK',
+        items: [
+          { name: 'Potong rambut', price: '70.000' },
+          { name: 'Nail art', price: '35.000' },
+          { name: 'Creambath', price: '80.000' },
+          { name: 'Treatment kutu (1-5 tahun)', price: '120.000' },
         ],
       },
     ],
