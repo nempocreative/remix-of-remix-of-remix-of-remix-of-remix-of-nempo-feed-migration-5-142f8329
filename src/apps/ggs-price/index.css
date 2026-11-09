@@ -132,8 +132,9 @@
   padding-bottom: calc(var(--title) * .62);
 }
 .ggpr-title-icon {
-  width: .85em;
-  height: .85em;
+  display: inline-block;
+  width: .9em;
+  height: .9em;
   margin-right: .4em;
   color: var(--ggpr-accent);
   vertical-align: -.08em;
