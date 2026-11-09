@@ -126,14 +126,11 @@
 .gghb-root {
   --gghb-ink: #3d0b2a;
   --gghb-ink-soft: #7a3a5c;
-  --gghb-paper: #fbf1f4;
-  --gghb-glow: radial-gradient(circle, #f6c9d8 0%, color-mix(in srgb, #f6c9d8 0%, transparent) 70%);
   --gghb-primary: #b0185a;
-  --gghb-on-primary: #ffffff;
-  --gghb-card: #ffffff;
-  --gghb-line: color-mix(in srgb, #3d0b2a 14%, transparent);
-  --gghb-shadow: 0 1.6cqw 4.4cqw color-mix(in srgb, #5a0f36 26%, transparent);
-  --gghb-badge-shadow: 0 .6cqw 1.8cqw color-mix(in srgb, #5a0f36 22%, transparent);
+  --gghb-backdrop: radial-gradient(70cqw 80cqw at 74% 62%, #fff7f9 0%, color-mix(in srgb, #fff7f9 0%, transparent) 100%), linear-gradient(180deg, #fcf2f5 0%, #f8dfe8 58%, #f2c4d4 100%);
+  --gghb-backword: color-mix(in srgb, #b0185a 9%, transparent);
+  --gghb-people-shadow: drop-shadow(0 1.6cqw 3.4cqw color-mix(in srgb, #5a0f36 22%, transparent));
+  --gghb-text-glow: 0 0 1.6cqw color-mix(in srgb, #fcf2f5 90%, transparent);
 }
 /* GGS Feed slide 28 (3:4): pedicure before/after palette. */
 .ggpd-root {

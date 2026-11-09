@@ -1,12 +1,12 @@
 import type { RefObject } from 'react';
 import { Sparkles } from 'lucide-react';
-import salonPhoto from '@/assets/ggs-feed-29-hair-treatment-retouch.jpg';
+import salonCutout from '@/assets/ggs-feed-29-hair-treatment-cutout.png';
 import ggsWatermark from '@/assets/ggs-header-footer-v2.png.asset.json';
 import './GgsHairBeautySlide.css';
 
 const TREATMENTS = ['Masker rambut', 'Treatment rambut bercabang', 'Treatment ketombe', 'Keratin treatment'];
 
-/** GGS Feed slide 29: hair treatment for self-care — the owner's retouched salon photo in an arch frame with copy on the left. */
+/** GGS Feed slide 29: hair treatment for self-care — the owner's retouched stylist + client cut-out blended straight into the backdrop, no frames or shapes. */
 export function GgsHairBeautySlide({ exportRef }: { exportRef?: RefObject<HTMLElement | null> }) {
   return (
     <div
@@ -14,7 +14,15 @@ export function GgsHairBeautySlide({ exportRef }: { exportRef?: RefObject<HTMLEl
       className="gghb-root"
       aria-label="GGS Beauty — Feed slide 29, hair treatment untuk mempercantik diri"
     >
-      <span className="gghb-glow" aria-hidden="true" />
+      <p className="gghb-backword" aria-hidden="true">
+        Glow
+      </p>
+
+      <img
+        className="gghb-people"
+        src={salonCutout}
+        alt="Stylist GGS Beauty merapikan rambut cokelat bergelombang pelanggan yang tersenyum"
+      />
 
       <section className="gghb-copy">
         <p className="gghb-kicker">Hair Treatment</p>
@@ -33,16 +41,8 @@ export function GgsHairBeautySlide({ exportRef }: { exportRef?: RefObject<HTMLEl
             </li>
           ))}
         </ul>
+        <p className="gghb-tags">Halus · Berkilau · Sehat</p>
       </section>
-
-      <figure className="gghb-frame">
-        <img
-          className="gghb-photo"
-          src={salonPhoto}
-          alt="Stylist GGS Beauty merapikan rambut cokelat bergelombang pelanggan yang tersenyum di kursi salon"
-        />
-        <figcaption className="gghb-badge">Halus · Berkilau · Sehat</figcaption>
-      </figure>
 
       <img className="gghb-watermark" src={ggsWatermark.url} alt="" aria-hidden="true" />
     </div>
