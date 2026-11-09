@@ -1,0 +1,31 @@
+- [x] Slide 23 full video
+- [x] Slide 24: layanan pelanggan WA + medsos (foto pedicure, desain ringkas)
+- [ ] Slide 23: buat ulang video unduhan (tunggu persetujuan owner)
+- [x] Slide 35: header/footer seperti slide 20, latar desain grafis (bukan foto), kartu tim muncul bersamaan
+- [ ] Slide 35: buat ulang video unduhan (tunggu persetujuan owner)
+- [x] GGS slide 25: promo nail art mulai 35.000 (foto owner diperbagus)
+- [x] GGS slide 27: promo Hari Pahlawan diskon 40% untuk guru, dokter, perawat, polisi, bidan (tunggu konfirmasi syarat kartu profesi)
+- [x] GGS slide 27: video stylist berseragam perawat bawa alat salon + MP4 unduhan
+- [x] Foto stylist berhijab (IMG_2709) pakai baju guru bawa alat salon
+- [x] Foto stylist (IMG_2708) pakai baju dokter bawa alat salon
+- [x] Foto stylist (IMG_2711) pakai baju bidan bawa alat salon
+- [x] Foto stylist (IMG_2707) pakai baju polwan bawa alat salon
+- [ ] Video guru, dokter, bidan & polwan / pasang fotonya di slide (tunggu pilihan owner + kredit)
+- [x] NEMPO slide 37: ganti kolase dengan video animasi lima kegiatan, sampul penuh, dan unduhan sesuai preview.
+- [x] NEMPO slide 37: empat foto kiriman ditambahkan; video 28 detik memuat sembilan foto, sampul penuh, tampilan desktop/ponsel dan kedua unduhan teruji sesuai berkas baru.
+- [ ] NEMPO slide 37: ganti judul kegiatan 7 menjadi Band Kala Muda, hapus seluruh ikon bintang, rapikan ikon pembuka, dan perbarui video serta sampul.
+- [x] NEMPO slide 37: ganti Dapoer Nyunda menjadi Review Makanan dan Good Story Cafe menjadi Meeting Client di video, sampul, serta unduhan.
+- [x] NEMPO slide 38–43: penjelasan detail tiap divisi Kala Muda (satu divisi per slide) dengan unduhan PNG tajam.
+- [x] NEMPO slide 38–43: ganti foto orang dengan ilustrasi lukisan per divisi, unduhan PNG dibuat ulang.
+- [x] NEMPO slide 38–43: latar ilustrasi lukisan + doodle kreatif (tidak polos), unduhan PNG dibuat ulang.
+
+- [x] GGS slide 27: five cut-out photos (no salon background), new composition, MP4 download
+- [x] GGS slide 27: half-body cut-outs with soft bottom fade
+- [x] GGS slide 27: modest polwan uniform
+- [x] GGS slide 27: remove flag, themed background
+- [x] GGS slide 28: pedicure sebelum/sesudah dari foto owner, latar spa menyatu, unduhan PNG
+
+- [x] Kalender GGS: perbarui komposisi, rapikan dua belas bulan, dan periksa tampilan serta unduhan PNG.
+- [x] Kalender GGS: tambahkan tanggal merah dan keterangan hari besar berdasarkan sumber yang terverifikasi.
+- [x] Migrasi Tion Feed (Nasution Boy) dari repo organizer ke /tion-feed
+- [x] Tion Feed: sisakan slide 1 saja (Story juga dihapus)
