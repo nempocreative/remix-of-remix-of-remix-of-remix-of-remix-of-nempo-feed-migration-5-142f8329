@@ -68,8 +68,13 @@ async def main():
           html,body,.ggpr-root {background: none !important;}
           .ggpr-root {min-height: 0 !important;}
           .ggpr-pages {display: block !important; padding: 0 !important;}
-          .ggpr-page-wrap {width: 210mm !important;}
-          .ggpr-page {width: 210mm !important; height: 297mm !important;
+          /* Whole-pixel sheet matching the PDF paper exactly, one per page,
+             so no white strip builds up at the bottom or right edge. */
+          @page {size: A4; margin: 0;}
+          .ggpr-page-wrap {width: 100vw !important; margin: 0 !important;
+                           padding: 0 !important; break-after: page !important;}
+          .ggpr-page-wrap:last-child {break-after: auto !important;}
+          .ggpr-page {width: 100vw !important; height: 100vh !important; overflow: hidden !important;
                       aspect-ratio: auto !important; box-shadow: none !important;}
         ''')
         await page.evaluate('''async () => {
@@ -91,8 +96,7 @@ async def main():
         # first makes pdf() apply the print stylesheet correctly.
         await page.emulate_media(media='screen')
         OUTPUT.parent.mkdir(parents=True, exist_ok=True)
-        await page.pdf(path=str(OUTPUT), format='A4', print_background=True,
-                       prefer_css_page_size=True, margin={k: '0' for k in ['top','bottom','left','right']})
+        await page.pdf(path=str(OUTPUT), format='A4', print_background=True, prefer_css_page_size=True, margin={k: '0' for k in ['top','bottom','left','right']})
         print(f'Exported {count} pages to {OUTPUT.relative_to(ROOT)}')
         await browser.close()
 
