@@ -62,6 +62,15 @@ async def main():
             {font-family: "Print Playfair Display", serif;}
           .ggpr-label {font-family: "Print Archivo Black", sans-serif;}
           .ggpr-footer-text {font-family: "Print Outfit", sans-serif;}
+          /* pdf() runs with screen styles (see note below), so force the
+             print layout unconditionally: only the A4 sheet, full bleed. */
+          .ggpr-toolbar,.ggpr-page-no {display: none !important;}
+          html,body,.ggpr-root {background: none !important;}
+          .ggpr-root {min-height: 0 !important;}
+          .ggpr-pages {display: block !important; padding: 0 !important;}
+          .ggpr-page-wrap {width: 210mm !important;}
+          .ggpr-page {width: 210mm !important; height: 297mm !important;
+                      aspect-ratio: auto !important; box-shadow: none !important;}
         ''')
         await page.evaluate('''async () => {
           await document.fonts.ready;
