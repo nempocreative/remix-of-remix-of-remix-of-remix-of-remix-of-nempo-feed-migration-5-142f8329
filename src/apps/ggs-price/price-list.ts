@@ -105,7 +105,7 @@ export const GGS_PRICE_PAGES: PricePage[] = [
           { name: 'Potong poni', price: '20.000' },
           { name: 'Potong cuci catok', price: '85.000' },
           { name: 'Potong cuci curly', price: '90.000' },
-          { name: 'Potong cuci blow', price: '60.000' },
+          { name: 'Potong cuci blow', price: '85.000' },
         ],
       },
     ],
