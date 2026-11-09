@@ -177,7 +177,7 @@
 }
 .ggpr-row .price {
   flex: none;
-  width: 11ch;
+  width: calc(110 * var(--pt));
   text-align: right;
   white-space: nowrap;
   font-variant-numeric: tabular-nums;
