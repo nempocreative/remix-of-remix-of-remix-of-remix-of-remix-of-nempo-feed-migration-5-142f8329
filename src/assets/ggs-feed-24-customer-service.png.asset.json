@@ -1,11 +1,11 @@
 {
-  "version": 1,
   "asset_id": "3a5b0f3c-e6f6-4dcc-9c70-f4bb8e972303",
-  "project_id": "2077d2fe-f49e-4189-b9be-69e9e1844ef0",
-  "url": "/__l5e/assets-v1/3a5b0f3c-e6f6-4dcc-9c70-f4bb8e972303/ggs-feed-24-customer-service.png",
-  "r2_key": "a/v1/2077d2fe-f49e-4189-b9be-69e9e1844ef0/3a5b0f3c-e6f6-4dcc-9c70-f4bb8e972303/ggs-feed-24-customer-service.png",
-  "original_filename": "ggs-feed-24-customer-service.png",
-  "size": 5860913,
   "content_type": "image/png",
-  "created_at": "2026-11-09T12:45:15Z"
+  "created_at": "2026-11-09T12:45:15Z",
+  "original_filename": "ggs-feed-24-customer-service.png",
+  "project_id": "72a19872-269a-4680-8550-81fd4fabb918",
+  "r2_key": "a/v1/72a19872-269a-4680-8550-81fd4fabb918/3a5b0f3c-e6f6-4dcc-9c70-f4bb8e972303/ggs-feed-24-customer-service.png",
+  "size": 5860913,
+  "url": "/__l5e/assets-v1/3a5b0f3c-e6f6-4dcc-9c70-f4bb8e972303/ggs-feed-24-customer-service.png",
+  "version": 1
 }

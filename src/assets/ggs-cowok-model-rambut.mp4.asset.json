@@ -1,11 +1,11 @@
 {
-  "version": 1,
   "asset_id": "f41797cc-bdd8-48a4-a014-6d359ff25b1d",
-  "project_id": "2077d2fe-f49e-4189-b9be-69e9e1844ef0",
-  "url": "/__l5e/assets-v1/f41797cc-bdd8-48a4-a014-6d359ff25b1d/ggs-cowok-model-rambut-hd.mp4",
-  "r2_key": "a/v1/2077d2fe-f49e-4189-b9be-69e9e1844ef0/f41797cc-bdd8-48a4-a014-6d359ff25b1d/ggs-cowok-model-rambut-hd.mp4",
-  "original_filename": "ggs-cowok-model-rambut-hd.mp4",
-  "size": 9128208,
   "content_type": "video/mp4",
-  "created_at": "2026-11-09T12:44:27Z"
+  "created_at": "2026-11-09T12:44:27Z",
+  "original_filename": "ggs-cowok-model-rambut-hd.mp4",
+  "project_id": "72a19872-269a-4680-8550-81fd4fabb918",
+  "r2_key": "a/v1/72a19872-269a-4680-8550-81fd4fabb918/f41797cc-bdd8-48a4-a014-6d359ff25b1d/ggs-cowok-model-rambut-hd.mp4",
+  "size": 9128208,
+  "url": "/__l5e/assets-v1/f41797cc-bdd8-48a4-a014-6d359ff25b1d/ggs-cowok-model-rambut-hd.mp4",
+  "version": 1
 }

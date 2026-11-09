@@ -1,11 +1,11 @@
 {
-  "version": 1,
   "asset_id": "1a0ce940-fc2a-4ab8-9a8a-ffcd346e6b9d",
-  "project_id": "2077d2fe-f49e-4189-b9be-69e9e1844ef0",
-  "url": "/__l5e/assets-v1/1a0ce940-fc2a-4ab8-9a8a-ffcd346e6b9d/ggs-open-hours-hair-sweep.mp4",
-  "r2_key": "a/v1/2077d2fe-f49e-4189-b9be-69e9e1844ef0/1a0ce940-fc2a-4ab8-9a8a-ffcd346e6b9d/ggs-open-hours-hair-sweep.mp4",
-  "original_filename": "ggs-open-hours-hair-sweep.mp4",
-  "size": 9069481,
   "content_type": "video/mp4",
-  "created_at": "2026-11-09T12:46:25Z"
+  "created_at": "2026-11-09T12:46:25Z",
+  "original_filename": "ggs-open-hours-hair-sweep.mp4",
+  "project_id": "72a19872-269a-4680-8550-81fd4fabb918",
+  "r2_key": "a/v1/72a19872-269a-4680-8550-81fd4fabb918/1a0ce940-fc2a-4ab8-9a8a-ffcd346e6b9d/ggs-open-hours-hair-sweep.mp4",
+  "size": 9069481,
+  "url": "/__l5e/assets-v1/1a0ce940-fc2a-4ab8-9a8a-ffcd346e6b9d/ggs-open-hours-hair-sweep.mp4",
+  "version": 1
 }

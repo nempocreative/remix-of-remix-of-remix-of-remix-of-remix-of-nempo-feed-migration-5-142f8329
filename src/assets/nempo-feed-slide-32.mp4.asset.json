@@ -1,11 +1,11 @@
 {
-  "version": 1,
   "asset_id": "563fa1f9-8437-45c9-8362-aba6d80d55b7",
-  "project_id": "2077d2fe-f49e-4189-b9be-69e9e1844ef0",
-  "url": "/__l5e/assets-v1/563fa1f9-8437-45c9-8362-aba6d80d55b7/nempo-feed-slide-32.mp4",
-  "r2_key": "a/v1/2077d2fe-f49e-4189-b9be-69e9e1844ef0/563fa1f9-8437-45c9-8362-aba6d80d55b7/nempo-feed-slide-32.mp4",
-  "original_filename": "nempo-feed-slide-32.mp4",
-  "size": 13961724,
   "content_type": "video/mp4",
-  "created_at": "2026-11-09T12:49:38Z"
+  "created_at": "2026-11-09T12:49:38Z",
+  "original_filename": "nempo-feed-slide-32.mp4",
+  "project_id": "72a19872-269a-4680-8550-81fd4fabb918",
+  "r2_key": "a/v1/72a19872-269a-4680-8550-81fd4fabb918/563fa1f9-8437-45c9-8362-aba6d80d55b7/nempo-feed-slide-32.mp4",
+  "size": 13961724,
+  "url": "/__l5e/assets-v1/563fa1f9-8437-45c9-8362-aba6d80d55b7/nempo-feed-slide-32.mp4",
+  "version": 1
 }
