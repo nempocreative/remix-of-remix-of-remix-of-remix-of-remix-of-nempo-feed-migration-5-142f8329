@@ -1,5 +1,5 @@
 .ggh-root{position:relative;isolation:isolate;width:100%;aspect-ratio:3/4;overflow:hidden;container-type:inline-size;background:var(--ggh-paper);font-family:'DM Sans',sans-serif;color:var(--ggh-ink)}
-.ggh-photo{position:absolute;top:0;left:0;width:100%;height:100%;object-fit:cover;object-position:50% 40%}
+.ggh-photo{position:absolute;top:0;left:0;width:100%;height:100%;object-fit:cover;object-position:50% 55%}
 .ggh-fade{position:absolute;inset:0;background:var(--ggh-fade)}
 .ggh-watermark{position:absolute;inset:0;width:100%;height:100%;object-fit:contain;z-index:3;pointer-events:none}
 .ggh-copy{position:absolute;z-index:2;left:9cqw;right:9cqw;bottom:24cqw;display:flex;flex-direction:column;align-items:center;text-align:center}
