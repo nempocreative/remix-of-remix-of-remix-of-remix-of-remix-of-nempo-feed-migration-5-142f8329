@@ -1,5 +1,4 @@
 import type { RefObject } from 'react';
-import { Sparkles } from 'lucide-react';
 import salonBackdrop from '@/assets/ggs-feed-29-salon-backdrop.jpg';
 import salonPeople from '@/assets/ggs-feed-29-people-original.png';
 import ggsWatermark from '@/assets/ggs-header-footer-v2.png.asset.json';
@@ -35,10 +34,7 @@ export function GgsHairBeautySlide({ exportRef }: { exportRef?: RefObject<HTMLEl
         <p className="gghb-sub">Rambut sehat &amp; berkilau bikin kamu tampil segar dan makin percaya diri.</p>
         <ul className="gghb-list">
           {TREATMENTS.map((name) => (
-            <li key={name}>
-              <Sparkles className="gghb-icon" aria-hidden="true" />
-              {name}
-            </li>
+            <li key={name}>{name}</li>
           ))}
         </ul>
         <p className="gghb-tags">Halus · Berkilau · Sehat</p>
