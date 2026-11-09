@@ -19,14 +19,21 @@ function A4Page({ page }: { page: PricePage }) {
   // Shrink a row's text until name + price fit on one line.
   useLayoutEffect(() => {
     const fit = () => {
-      ref.current?.querySelectorAll<HTMLElement>('.ggpr-row').forEach((row) => {
-        let f = 1;
+      const rows = Array.from(ref.current?.querySelectorAll<HTMLElement>('.ggpr-row') ?? []);
+      // Find the smallest scale any row needs, then apply it to every row
+      // so all text on the page stays the same size.
+      let f = 1;
+      rows.forEach((row) => {
         row.style.fontSize = '';
         // row.scrollWidth grows past clientWidth when name + leader + price overflow.
         while (row.scrollWidth > row.clientWidth + 1 && f > 0.6) {
           f -= 0.03;
           row.style.fontSize = `calc(var(--text) * ${f.toFixed(2)})`;
         }
+      });
+      const size = `calc(var(--text) * ${f.toFixed(2)})`;
+      rows.forEach((row) => {
+        row.style.fontSize = size;
       });
     };
     fit();
